@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/14 15:29:57 by aybaassi          #+#    #+#             */
+/*   Updated: 2026/10/18 15:28:54 by aybaassi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+/*
+#include <stdio.h>
+#include <fcntl.h>
+int main()
+{
+	int fd;
+
+	fd = open("test.txt", O_CREAT | O_WRONLY, 0644);
+	ft_putchar_fd('A', fd);
+	close(fd);
+}
+*/
