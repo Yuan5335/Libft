@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 20:10:26 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/13 12:08:29 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 19:13:59 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,3 @@ char	*ft_strnstr(const char	*haystack, const char	*needle, size_t len)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char	s1[] = "Hello World!";
-	char	s11[] = "Wor";
-	char	s2[] = "Hello World!";
-	char	s22[] = "Wor";
-
-	printf("%s\n", ft_strnstr(s1, s11, 9));
-	printf("%s\n", strnstr(s2, s22, 9));
-}
-*/

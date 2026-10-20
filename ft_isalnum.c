@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:50:01 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/15 18:55:21 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 17:10:09 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	int	x;
-	int	y;
-
-	x = 50;
-	y = 2147483648 * 2;
-	printf("%d %d\n", ft_isalnum(x), ft_isalnum(y));
-	printf("%d %d\n", isalnum(x), isalnum(y));
-}
-*/

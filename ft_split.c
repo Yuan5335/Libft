@@ -6,13 +6,13 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:51:15 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/18 13:36:05 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:18:07 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	maxlen(char const	*s, char c)
+static size_t	maxlen(char const	*s, char c)
 {
 	size_t	i;
 	size_t	x;
@@ -32,7 +32,7 @@ size_t	maxlen(char const	*s, char c)
 	return (x);
 }
 
-char	**aalloc(char const	*s, char c, char	**str)
+static char	**aalloc(char const	*s, char c, char	**str)
 {
 	size_t	i;
 	size_t	j;
@@ -59,7 +59,7 @@ char	**aalloc(char const	*s, char c, char	**str)
 	return (str);
 }
 
-int	ffree(char **str, size_t maxlen)
+static int	ffree(char **str, size_t maxlen)
 {
 	size_t	i;
 	size_t	x;
@@ -84,7 +84,7 @@ int	ffree(char **str, size_t maxlen)
 	return (x);
 }
 
-char	**pput(char const	*s, char	**str, char c)
+static char	**ppput(char const	*s, char	**str, char c)
 {
 	size_t	i;
 	size_t	x;
@@ -123,23 +123,7 @@ char	**ft_split(char const	*s, char c)
 	aalloc(s, c, str);
 	if (ffree(str, x))
 		return (0);
-	pput(s, str, c);
+	ppput(s, str, c);
 	str[x] = 0;
 	return (str);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char	*s;
-	char	**x;
-
-	s = "a apple";
-	x = ft_split(s, 'a');
-	while (*x)
-	{
-		printf("%s\n", *x);
-		x++;
-	}
-}
-*/

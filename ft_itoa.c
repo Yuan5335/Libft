@@ -6,13 +6,13 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:02:07 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/18 13:51:49 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:18:57 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	aabs(long n)
+static unsigned int	aabs(long n)
 {
 	unsigned int	x;
 
@@ -23,7 +23,7 @@ unsigned int	aabs(long n)
 	return (x);
 }
 
-char	*aaloc(size_t	*pos, int sign, unsigned int x)
+static char	*aaloc(size_t	*pos, int sign, unsigned int x)
 {
 	size_t			i;
 	char			*p;
@@ -46,7 +46,7 @@ char	*aaloc(size_t	*pos, int sign, unsigned int x)
 	return (p);
 }
 
-char	*pput(char	*p, size_t	*pos, int sign, unsigned int x)
+static char	*pput(char	*p, size_t	*pos, int sign, unsigned int x)
 {
 	size_t			i;
 
@@ -88,10 +88,3 @@ char	*ft_itoa(int n)
 	pput(p, &i, sign, x);
 	return (p);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	printf("%s\n", ft_itoa(0));
-}
-*/

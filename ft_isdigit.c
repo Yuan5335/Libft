@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:46:20 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/15 18:53:13 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 17:09:47 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	int	x;
-	int	y;
-
-	x = 50;
-	y = 78;
-	printf("%d %d\n", ft_isdigit(x), ft_isdigit(y));
-	printf("%d %d\n", isdigit(x), isdigit(y));
-}
-*/

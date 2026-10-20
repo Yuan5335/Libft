@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:09:28 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/18 12:44:09 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 17:50:32 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,15 +49,3 @@ int	ft_atoi(const char	*str)
 	}
 	return ((int)x * sign);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char	s1[] = "-9223372036854775808";
-	char	s2[] = "	 9223372036854775808";
-
-	printf("%d | %d\n", ft_atoi(s1), ft_atoi(s2));
-	printf("%d | %d\n", atoi(s1), atoi(s2));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:41:55 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/18 15:37:15 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 19:02:10 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n, fd);
 	}
 }
-/*
-#include <stdio.h>
-#include <fcntl.h>
-int main()
-{
-	int fd;
-
-	fd = open("test.txt", O_CREAT | O_WRONLY, 0644);
-	ft_putnbr_fd(-2147483648, fd);
-	close(fd);
-}
-*/

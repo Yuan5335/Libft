@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 17:51:47 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/12 17:59:30 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/20 18:44:03 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,3 @@ char	*ft_strrchr(const char	*s, int c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char	*s1;
-	char	*s2;
-
-	s1 = "Hello";
-	s2 = "Hello";
-	printf("%s %s\n", ft_strchr(s1, 32), ft_strrchr(s2, 'l'));
-	printf("%s %s\n", strchr(s1, 32), strrchr(s2, 'l'));
-}
-*/
