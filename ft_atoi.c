@@ -6,13 +6,13 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:09:28 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/20 17:50:32 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/21 13:46:07 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ws(const char	*str, size_t	*pos)
+static int	ws(const char	*str, size_t	*pos)
 {
 	size_t	i;
 	int		sign;

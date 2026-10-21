@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:54:09 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/18 12:52:39 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/21 13:56:43 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(const char	*s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	slen;
 
+	if (!s)
+		return (0);
 	slen = ft_strlen(s);
 	if (start > slen)
 		start = slen;
@@ -35,12 +37,3 @@ char	*ft_substr(const char	*s, unsigned int start, size_t len)
 	a[i] = '\0';
 	return (a);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char	s[] = "Hello";
-
-	printf("%s\n", ft_substr(s, 7, 8));
-}
-*/
