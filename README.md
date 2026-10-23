@@ -34,8 +34,11 @@ The library is organized in three parts:
 The library is compiled with cc and the flags -Wall -Wextra -Werror.
 
 **make or make all : builds libft.a**
+
 **make clean       : removes the object files**
+
 **make fclean      : removes the object files and libft.a**
+
 **make re          : fclean + all**
 
 
