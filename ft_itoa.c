@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:02:07 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/20 15:18:57 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:36:26 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static char	*aaloc(size_t	*pos, int sign, unsigned int x)
 	p = (char *)malloc(sign + i + 1);
 	if (!p)
 		return (0);
-	*pos = i;
+	*pos = i + sign;
 	return (p);
 }
 
@@ -58,10 +58,7 @@ static char	*pput(char	*p, size_t	*pos, int sign, unsigned int x)
 		return (p);
 	}
 	if (sign == 1)
-	{
 		p[0] = '-';
-		i++;
-	}
 	while (x)
 	{
 		p[--i] = (x % 10 + 48);

@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 17:34:43 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/20 15:59:34 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/22 10:33:59 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ t_list	*ft_lstmap(t_list	*lst, void	*(*f)(void *), void (*del)(void *))
 		x = ft_lstnew(a);
 		if (!x)
 		{
-			del(a);
+			if (a)
+				del(a);
 			ft_lstclear(&head, del);
 			return (0);
 		}

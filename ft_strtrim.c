@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:17:58 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/18 19:07:57 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/21 17:49:35 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ char	*ft_strtrim(char const	*s1, char const	*set)
 	ft_strlcpy(p, s1 + start, size);
 	return (p);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char	s1[] = "";
-	char	s2[] = " 	";
-
-	printf("%s\n", ft_strtrim(s1, s2));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:51:15 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/20 15:18:07 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/22 09:50:41 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,6 +116,8 @@ char	**ft_split(char const	*s, char c)
 	char	**str;
 	size_t	x;
 
+	if (!s)
+		return (0);
 	x = maxlen(s, c);
 	str = (char **)malloc((x + 1) * sizeof(char *));
 	if (!str)
