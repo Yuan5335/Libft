@@ -5,8 +5,6 @@ CC = cc
 FLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
-.PHONY: clean
-
 all: $(NAME)
 
 $(NAME): $(OBJS)

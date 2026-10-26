@@ -6,7 +6,7 @@
 /*   By: aybaassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:52:58 by aybaassi          #+#    #+#             */
-/*   Updated: 2026/10/20 17:29:07 by aybaassi         ###   ########.fr       */
+/*   Updated: 2026/10/24 11:01:29 by aybaassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void	*dst, const void	*src, size_t len)
 
 	if (!dst && !src)
 		return (0);
+	if (len == 0)
+		return (dst);
 	a = dst;
 	b = src;
 	if (a < b)
